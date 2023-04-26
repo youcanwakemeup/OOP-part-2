@@ -8,18 +8,13 @@ public class Main {
                           new Truck("truck2", 8)};
         Bicycle[] bicycles = {new Bicycle("bicycle1", 2),
                               new Bicycle("bicycle2", 2)};
-        Transport[] transports = new Transport[cars.length + trucks.length + bicycles.length];
-        int i = 0;
-        for (Car car : cars) {
-            transports[i++] = car;
-        }
 
-        for (Truck truck : trucks) {
-            transports[i++] = truck;
-        }
+        ServiceStation.check(cars);
+        ServiceStation.check(trucks);
+        ServiceStation.check(bicycles);
+        ServiceStation.check(bicycles[0]);
+        ServiceStation.check(cars[1]);
+        ServiceStation.check(trucks[0]);
 
-        for (Bicycle bicycle : bicycles) {
-            transports[i++] = bicycle;
-        }
     }
 }
