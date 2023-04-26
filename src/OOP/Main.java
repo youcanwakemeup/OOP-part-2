@@ -12,9 +12,7 @@ public class Main {
         ServiceStation.check(cars);
         ServiceStation.check(trucks);
         ServiceStation.check(bicycles);
-        ServiceStation.check(bicycles[0]);
-        ServiceStation.check(cars[1]);
-        ServiceStation.check(trucks[0]);
+
 
     }
 }
